@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><b>ONE</b>STOP</title>
+    <style>
+        body {
+            background: url("./img/BG.jpeg") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        text-align: center;
+        padding-top: 60px;
+        }
+
+        h1 {
+            color: #951313;
+        }
+
+        p {
+            color: #795858;
+            font-size: 18px;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 20px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+<head>
+  <title>Login Page</title>
+  <style>
+    /* CSS styles... */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form class="login-form" onsubmit="login(event)">
+      <h4 style="font-size: 45px;"><b>WELCOME TO ONESTOP</b></h4>
+
+      <h2><p style="color:#951313;font-size:35px;">Login/Sign Up</p></h2>
+      <input type="text" id="username" placeholder="Username" required>
+      <p style="color:rgb(0, 0, 0);font-size:22px;"><input type="password" id="password" placeholder="Password" required></p>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <script>
+    function login(event) {
+      event.preventDefault(); // Prevent form submission
+      
+      // Retrieve username and password values
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+      
+      // Add your login logic here (e.g., validate credentials)
+      
+      // Example validation: Check if username is 'admin' and password is 'password'
+ {
+        alert('Login successful!');
+        window.location.href = 'http://127.0.0.1:5500/ONESTOP/web%20dev/HTML.html'; // Redirect to another HTML file
+      }}
+  </script>
+</body>
+</html>

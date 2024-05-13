@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Description with Reviews, Ratings, and Slideshow</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    /* CSS styles... */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flexbox;
+      
+    }
+    
+    .container {
+      height: 60px;
+      margin: 50 auto;
+      padding: 100px;
+      padding-left: 200px;
+      display: flex;
+    }
+
+    .container-desc{
+      max-width: 800px;
+      margin: 50 auto;
+      padding-left: 100px;
+      display: flexbox;
+      font-size: medium;
+    }
+
+    .outer-container{
+      display: flexbox;
+    }
+
+    .slideshow-container {
+      margin-bottom: 20px;
+    }
+    
+    .slide-image {
+      height: auto;
+    }
+    
+    .slide-dot {
+      display:inline-flex;
+      width: 10px;
+      height: 10px;
+      background-color: #bbb;
+      border-radius: 50%;
+      margin: 0 2px;
+      cursor: pointer;
+    }
+    
+    .slide-dot.active {
+      background-color: #717171;
+    }
+    
+    .product-title {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+    
+    .product-price {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .product-description {
+      margin-bottom: 20px;
+    }
+    
+    .review-section {
+      margin-bottom: 20px;
+    }
+    
+    .review {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    
+    .review .review-author {
+      font-weight: bold;
+    }
+    
+    .review .review-rating {
+      color: #FFD700;
+    }
+    
+    .review .review-content {
+      margin-top: 5px;
+    }
+    
+    .add-review-form {
+      margin-top: 20px;
+    }
+    
+    .add-review-form label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .add-review-form textarea {
+      width: 100%;
+      height: 100px;
+      resize: vertical;
+      outline: black;
+    }
+    
+    .add-review-form button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .add-review-form button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+
+    <div class="header-1">
+
+        <div class="share">
+            <span> follow us : </span>
+            <a href="" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+
+        <div class="call">
+            <span> call us : </span>
+            <a href="#">+123-456-7890</a>
+        </div>
+
+    </div>
+
+    <div class="header-2">
+
+        <a href="#" class="logo"> <i class=""></i><b>ONE</b> STOP </a>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </div>
+
+    <div class="header-3">
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#category">category</a>
+            <a href="#product">product</a>
+            <a href="#deal">deal</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <a href="http://127.0.0.1:5500/ONESTOP/web%20dev/addtocart.html" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-user-circle"></a>
+        </div>
+
+    </div>
+
+</header>
+
+
+<div class = "outer-container">
+
+  <div class="container">
+    <div class="slideshow-container">
+      <img class="slide-image" src="./product/c1.webp" alt="Slide 1">
+      <img class="slide-image" src="./product/C2.webp" alt="Slide 2">
+      <img class="slide-image" src="./product/C3.webp" alt="Slide 3">
+      
+      <div style="text-align: center;">
+        <span class="slide-dot"></span>
+        <span class="slide-dot"></span>
+        <span class="slide-dot"></span>
+      </div>
+    </div>
+
+  
+<div class = "container-desc">
+    <h1 class="product-title">Light Pink Chikankari Embroidery Kurta</h1>
+    <p class="product-price">Rs. 1999</p>
+    <div class="quantity">
+      <span> quantity : </span>
+      <input type="number" min="1" max="100" value="1">
+  </div>
+  <a href="#" class="btn">add to cart</a>
+    <br><br/>
+    <p class="product-description">
+        <b>About the product</b>
+        <br>
+        Light Pink Floral Printed Kurta With Sheer Brasso Panel Detail At Hem And Sleeve. The Beutiful Chikankari Embroidery Is Complemented By Delicate Lace Accents And Sequin Highlighting.
+        
+        <br>
+        <br>
+        <b>Styling Suggestions</b>
+        <br>
+        Pair The Kurta With Straight Fit Pants And A Brasso Drape For A Pretty Summer Look.
+        <br>
+        <br>
+        <br>
+        <b>Manufacturing Details</b>
+        <br>
+        Marketed By TCNS Clothing Co. Limited Quantity 1N Name of Manufacturer Rr Fashion Clothing Pvt Ltd Place of Manufacturer Plot No 124 Phase-I Udyog Vihar Gurgaon Hr-122016 Country Of Origin India Manufactured & Packed for TCNS Clothing Co. Limited For Complaints Customer Care No +91-7583896939, customercare@tcnsclothing.comRegistered Office AddressW-House, 119, Neelagagan towers, Mandi Road, Sultanpur, Mehrauli, New Delhi-110030 Communication AddressW-House, 119, Neelagagan towers, Mandi Road, Sultanpur, Mehrauli, New Delhi-110030</p>
+    
+    <div class="review-section">
+      <h2>Reviews</h2>
+      <div class="review">
+        <div class="review-author">Ram kali</div>
+        <div class="review-rating">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+        <div class="review-content">
+          Best kurta
+        </div>
+      </div>
+      <div class="review">
+        <div class="review-author">Indumathi</div>
+        <div class="review-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="review-content">
+          worth the price
+        </div>
+      </div>
+    </div>
+    
+    <div class="add-review-form">
+      <h2>Add a Review</h2>
+      <form onsubmit="submitReview(event)">
+        <label for="review-author">Your Name:</label>
+        <input type="text" id="review-author" required>
+        
+        <label for="review-rating">Rating:</label>
+        <select id="review-rating" required>
+          <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+          <option value="4">&#9733;&#9733;&#9733;&#9733;&#9734;</option>
+          <option value="3">&#9733;&#9733;&#9733;&#9734;&#9734;</option>
+          <option value="2">&#9733;&#9733;&#9734;&#9734;&#9734;</option>
+          <option value="1">&#9733;&#9734;&#9734;&#9734;&#9734;</option>
+        </select>
+        
+        <label for="review-content">Review:</label>
+        <textarea id="review-content" required></textarea>
+        
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  <script src="script2.js"></script>
+  <script src ="myscript.js"></script>
+</body>
+</html>
